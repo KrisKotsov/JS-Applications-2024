@@ -1,1 +1,1 @@
-# JS-Applications-2024
+SoftUni JS Applications course. Studying async functions and single page apps. 
