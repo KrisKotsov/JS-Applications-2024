@@ -10,7 +10,7 @@ function loadRepos() {
 		.catch(onError)
 }
 
-function onHeaders(response) {
+function onHeaders(res) {
 	if (!res.ok) {
 		throw "Error"
 	}
