@@ -121,7 +121,7 @@ function attachEvents() {
             const threeDay = await (threeDayForecast(code))
 
             const { forecast: { condition, high, low }, name: oneDayCityName } = oneDay
-            const { forecast: threeDayForecastData, name: threeDayCityName } = threeDay
+            const { forecast: threeDayForecastData } = threeDay
 
             const [day1, day2, day3] = threeDayForecastData;
 
@@ -134,6 +134,7 @@ function attachEvents() {
 
 
         } catch (err) {
+            forecast.textContent = "Error"
         }
     }
 
