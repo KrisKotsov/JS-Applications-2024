@@ -12,8 +12,9 @@ const userNav = document.querySelectorAll("li.user")
 const guestNav = document.querySelectorAll("li.guest")
 
 const routes = {
-    "/register": showRegisterView,
+    "/": showHome,
     "/home": showHome,
+    "/register": showRegisterView,
     "/login": showLogin,
     "/logout": showLogout
 }
@@ -42,3 +43,4 @@ export function updateNav() {
 }
 
 updateNav()
+showHome()
